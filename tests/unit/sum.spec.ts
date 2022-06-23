@@ -1,11 +1,11 @@
-import { sum } from "./sum";
+import { sum } from "@/helpers/sum/sum";
 
 describe("sum", function () {
-  test("positive", () => {
+  it("positive", () => {
     expect(sum(5, 5)).toBe(10);
   });
 
-  test("negative", () => {
+  it("negative", () => {
     expect(sum(-5, -5)).toBe(-10);
   });
 });
